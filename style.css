@@ -1,0 +1,32 @@
+/* Existing styles... */
+
+.note {
+    resize: both;
+    overflow: auto;
+    position: absolute;
+    background-color: yellow;
+    border: 1px solid black;
+    z-index: 10000;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.color-picker {
+    cursor: pointer;
+}
+
+/* Existing styles... */

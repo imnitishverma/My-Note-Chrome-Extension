@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "My Note Extension",
+  "version": "1.0",
+  "description": "Create and manage notes on any web page.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "permissions": ["storage", "activeTab", "contextMenus", "scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "options_page": "options.html"
+}

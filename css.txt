@@ -1,0 +1,10 @@
+my-note-extension/
+├── manifest.json
+├── background.js
+├── content.js
+├── popup.html
+├── popup.js
+├── style.css
+├── icon.png
+├── options.html
+└── options.js
