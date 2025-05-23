@@ -8,6 +8,7 @@ My Note is a simple and intuitive Chrome extension designed to help you take qui
 - **Persistent Storage**: Your notes are saved and accessible across browser sessions.
 - **Minimalist Design**: Clean and easy-to-use interface for a seamless experience.
 - **Keyboard Shortcuts**: Enhance your productivity with quick access to note-taking.
+- **Markdown Support**: Write notes in Markdown and see them rendered with basic formatting in the popup.
 
 ## Installation
 
@@ -36,6 +37,7 @@ To install the My Note Chrome extension, follow these steps:
 2. **Add a Note**:
     - Click the "New Note" button to create a new note.
     - Type your note content and it will be saved automatically.
+    - Your notes can now be written using Markdown syntax! Basic formatting like headers, lists, bold, italics, and code snippets will be rendered when you view your notes in the popup.
 
 3. **Edit or Delete Notes**:
     - To edit a note, simply click on the note text and make your changes.
