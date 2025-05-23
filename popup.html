@@ -10,7 +10,66 @@
       padding: 10px;
       border-bottom: 1px solid #ccc;
     }
+    /* Markdown specific styles */
+    .note-summary h1, .note-summary h2, .note-summary h3 {
+      margin-top: 0.5em;
+      margin-bottom: 0.2em;
+      padding: 0;
+      font-size: 1.2em; /* Adjusted for small popup */
+    }
+    .note-summary h2 {
+      font-size: 1.1em;
+    }
+    .note-summary h3 {
+      font-size: 1.0em;
+    }
+    .note-summary p {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+    .note-summary ul, .note-summary ol {
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      padding-left: 20px; /* Indent lists */
+      list-style-position: outside;
+    }
+    .note-summary li {
+      margin-bottom: 0.2em;
+    }
+    .note-summary pre {
+      background-color: #f4f4f4;
+      padding: 5px;
+      overflow-x: auto; /* Enable horizontal scroll for long code lines */
+      margin-bottom: 0.5em;
+    }
+    .note-summary code {
+      font-family: monospace;
+      background-color: #f0f0f0; /* Slightly different from pre for distinction */
+      padding: 0.1em 0.3em;
+      border-radius: 3px;
+    }
+    .note-summary pre code { /* Reset for code inside pre */
+        background-color: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
+    .note-summary strong {
+      font-weight: bold;
+    }
+    .note-summary em {
+      font-style: italic;
+    }
+    .note-summary blockquote {
+      border-left: 3px solid #ccc;
+      padding-left: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0.5em;
+      color: #555;
+    }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.6/purify.min.js"></script>
 </head>
 <body>
   <div id="notes-summary"></div>

@@ -10,7 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         result[activeTab.url].forEach((note, index) => {
           const noteDiv = document.createElement('div');
           noteDiv.className = 'note-summary';
-          noteDiv.innerText = note.text;
+          if (typeof marked !== 'undefined' && typeof DOMPurify !== 'undefined') {
+            const htmlContent = marked.parse(note.text);
+            noteDiv.innerHTML = DOMPurify.sanitize(htmlContent);
+          } else {
+            console.error('Marked.js or DOMPurify is not loaded');
+            noteDiv.innerText = note.text;
+          }
           notesSummary.appendChild(noteDiv);
         });
       }
